@@ -1,0 +1,46 @@
+<br><b><u> Registration form </u>
+<br><br><br>
+
+<table border='0' colspan="2">
+<tr> <td> Full name <td> <input id=fullname >
+<tr> <td>  user id<td> <input id= userid >
+<tr> <td> Password <td> <input type='password' input id= password>
+<tr> <td> Email Id <td> <input id= emailid>
+<tr> <td> Contact no <td> <input id=contact>
+<tr> <td> Date of Birth <td> <input type=date input id = dob>
+<tr> <td> Address <td> <input id=address>
+<tr> <td> City <td> <input id=city>
+<tr> <td> State <td> <input id=state>
+<tr> <td> Country <td><input id= country>
+</select>
+
+<tr> <td> <td>  <input type='button' value='Register' onclick='show()'/></td></tr>
+</table>
+
+<p id="p1"></p>
+<script>
+function show()
+{
+a=fullname.value;
+b=userid.value;
+c=password.value;
+d=emailid.value;
+e=contact.value;
+f=dob.value;
+g=address.value;
+h=city.value;
+i=state.value;
+j=country.valueout="<table border=10>"
+out+="<tr><th>Full name <td>"+a
+out+="<tr><th>User Id <td>"+b
+out+="<tr><th>Password <td>"+c
+out+="<tr><th>Email ID <td>"+d
+out+="<tr><th>Contact no <td>"+e
+out+="<tr><th>Date of Birth <td>"+f
+out+="<tr><th>Address <td>"+g
+out+="<tr><th>City <td>"+h
+out+="<tr><th>State <td>"+i
+out+="<tr><th>Country <td>"+j
+p1.innerhtml=out
+}
+</script>
