@@ -1,0 +1,48 @@
+<style>
+.btn{height:20px;width:20px;font-size:18px;color:blue}
+
+</style>
+<center>
+<table border=2>
+<input id=n1><br>
+<input id=n2><br>
+
+<input type=button value='+'class=btn onclick='add()' />
+<input type=button value='-'class=btn onclick='sub()' />
+<input type=button value='*'class=btn onclick='multi()' />
+<input type=button value='/'class=btn onclick='div()' />
+<output  id=out1 />
+<script>
+function add()
+{
+a=parseInt(n1.value);
+b=parseInt(n2.value);
+c=a+b;
+out1.value="addition:"+c
+}
+
+
+function sub()
+{
+a=parseInt(n1.value);
+b=parseInt(n2.value);
+c=a-b;
+out1.value="subtraction:"+c
+}
+
+function multi()
+{
+a=parseInt(n1.value);
+b=parseInt(n2.value);
+c=a*b;
+out1.value="multiplication:"+c
+}
+
+function div()
+{
+a=parseInt(n1.value);
+b=parseInt(n2.value);
+c=a/b;
+out1.value="division:"+c
+}
+</script>
